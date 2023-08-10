@@ -1,5 +1,6 @@
 from nodestream_plugin_dotenv.plugin import DotEnvProjectPlugin
 
+
 def test_plugin_activate_no_env_set(mocker):
     loader = mocker.patch("nodestream_plugin_dotenv.plugin.load_dotenv")
     subject = DotEnvProjectPlugin()
