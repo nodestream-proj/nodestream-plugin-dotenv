@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "nodestream-plugin-dotenv"
-version = "0.8.0"
+version = "0.8.1"
 description = "A plugin to nodestream for loading environment variables from a .env file"
 authors = ["Zach Probst <Zach_Probst@intuit.com>"]
 packages = [{include = "nodestream_plugin_dotenv"}]
@@ -25,7 +25,7 @@ classifiers = [
 [tool.poetry.dependencies]
 python = "^3.10"
 nodestream = "^0.8.0"
-python-dotenv = "^1.0.0"
+python-dotenv = ">=0.21.0,< 2"
 
 [tool.poetry.plugins."nodestream.plugins"]
 projects = "nodestream_plugin_dotenv.plugin"
