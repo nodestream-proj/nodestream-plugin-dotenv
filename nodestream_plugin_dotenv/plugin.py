@@ -5,5 +5,5 @@ from nodestream.project import Project, ProjectPlugin
 
 
 class DotEnvProjectPlugin(ProjectPlugin):
-    def activate(self, _: Project):
+    def before_project_load(self, _: Project):
         load_dotenv(os.environ.get("NODESTREAM_DOTENV_PATH", ".env"))
